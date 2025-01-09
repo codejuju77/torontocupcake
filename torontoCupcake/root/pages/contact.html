@@ -21,7 +21,50 @@
     </header>
     
     <main class="contact">
+        
+        <form action="mailto:email@gmail.com" method="post" id="info">
+                       
+                    <fieldset>
+                       <legend>Your Information</legend>
+                       <ul id="yourInfo">
+                            <li>
+                               <label for="firstName">First name:</label>
+                               <input type="text" id="firstName" name="firstName" value="" required />
+                            </li>
+                            <li>
+                               <label for="lastName">Last name:</label>
+                               <input type="text" id="lastName" name="lastName" value="" required />
+                            </li>
+                            <li>
+                               <label for="email">Email:</label>
+                               <input type="text" id="email" name="email" value="" required />
+                            </li>
+                            <li>
+                               <label for="phone"> Telephone number:</label>
+                               <input type="text" id="phone" name="phone" value="" required />
+                            </li>
+                       </ul>
+                    </fieldset>
+                    <fieldset>
+                       <legend>More Details</legend>
+                        <ul>
+                            <li>
+                              <label for="store">Store location:</label>
+                               <select name="store" id="store">
+                                   <option value="Adelaide St">Adelaide St</option>
+                                   <option value="Yonge St">Yonge St</option>   
+                               </select>
+                            </li>
+                            <li>
+                                <label for="yourQuestion">Your question or message:</label>
+                                <textarea name="yourQuestion" id="yourQuestion" cols="30" rows="10"></textarea>
+                            </li>
+                            
+                        </ul>
+                    </fieldset>
+
     
+        </form>
     </main>
     
     
