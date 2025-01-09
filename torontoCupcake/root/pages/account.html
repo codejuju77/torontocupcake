@@ -13,7 +13,7 @@
                     <!--font awesome-->
                     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" type="text/css">
         </head>
-        <body class="account">
+        <body>
             <nav>
              <label for="showMenu" class="showMenu"><span class="fa-solid fa-bars"></span></label>
                <input type="checkbox" id="showMenu" role="button">
@@ -32,24 +32,47 @@
             <main class="internal">
                <section>
                 <h2>Log In</h2>
-                <!-- email and password form
-                sign in and create account buttons-->
+                    <form action="#" method="post" id="mainContact" enctype="text/plain">
+                        <fieldset class="account">
+                        <!-- is legend and fieldset needed?
+                        <legend>Log in</legend> -->
+                            <ul>
+                                <li>
+                                    <label for="email">E-mail</label>
+                                    <input type="text" id="email" name="email" required>
+                                </li>
+                                <li>
+                                    <label for="password">Password</label>
+                                    <input type="password" id="password" name="password" required>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <input type="submit" id="logIn" class="btn" value="Log in">
+                        <input type="submit" id="create" class="btn" value="Create account">
+                   </form>
+                
                 </section>
-                               <section>
-                   <h2>Reviews</h2>
-                   <!--Review carousel-->
-               </section>
+                    <section>
+                       <h2>Reviews</h2>
+                       <!--Review carousel-->
+                   </section>
                <section>
                    <h2>Rewards + 10% off</h2>
-                   <!-- form to subscribe -->
+                   <form action="#" method="post" id="mainContact" enctype="text/plain">
+                       <fieldset>
+                            <label for="email">E-mail</label>
+                            <input type="text" id="email" name="email" required>
+                       </fieldset>
+                           <input type="submit" id="subscribe" class="btn" value="Subscribe">
+                   </form>
                </section>
             </main>
-           <footer>
-               <!-- social media icons-->
-               <p>2405 Adelaide St. Toronto, Ontario 416-943-8365
-               </p>
-               <p>955 Yange St. Toronto, Ontario 416-272-0841
-               </p>
+            <footer>
+               <i class="fa-brands fa-instagram"></i>
+               <i class="fa-brands fa-facebook"></i>
+               <i class="fa-brands fa-snapchat"></i>
+               <p>2405 Adelaide St. Toronto, Ontario 416-943-8365</p>
+               <p>955 Yange St. Toronto, Ontario 416-272-0841</p>
                <p>Copyright 2025</p>
            </footer>
         </body>
