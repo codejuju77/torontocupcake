@@ -8,10 +8,21 @@
 		<link href="../css/reset.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://use.typekit.net/mid2tdp.css">
 		<link href="../css/basic.css" rel="stylesheet" type="text/css">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
     <nav>
-        
+        <label for="showMenu" class="showMenu"><span class="fa-solid fa-bars"></span></label>
+               <input type="checkbox" id="showMenu" role="button">
+               <ul class="menu">
+                   <li><a href="pages/shop.html">Shop</a></li>
+                   <li><a href="pages/aboutUs.html">About Us</a></li>
+                   <li><a href="pages/contact.html">Contact</a></li>
+                   <li><a href="pages/policies.html">Policies</a></li>
+                   <li><a href="pages/account.html">Account</a></li>
+               </ul>
+               <h1>Toronto Cupcakes</h1>
+               <img src="../images/cupcake.svg" alt="cupcake svg">   
     </nav>
     
     <header class="aboutUs">
@@ -30,12 +41,26 @@
             <img src="../images/aboutUsMain2.jpeg" alt="A spread of desserts on a table">
             <p>At Toronto Cupcake, we believe in giving back to the community. Since our inception, we have partnered with numerous local organizations, donating our time and/or delicious cupcakes to support causes that make a difference in local and regional communities. We are committed to making a positive impact in our community and welcome opportunities to collaborate on charitable events.</p>
         </article>
-        
-<!--        subscribe button-->
+         <section>
+                   <h2>Rewards + 10% off</h2>
+                   <form action="#" method="post" id="mainContact" enctype="text/plain">
+                       <fieldset>
+                            <label for="email">E-mail</label>
+                            <input type="text" id="email" name="email" required>
+                       </fieldset>
+                           <input type="submit" id="subscribe" class="btn" value="Subscribe">
+                   </form>
+               </section>
+
     </main>
     
     <footer>
-        
+        <i class="fa-brands fa-instagram"></i>
+               <i class="fa-brands fa-facebook"></i>
+               <i class="fa-brands fa-snapchat"></i>
+               <p>2405 Adelaide St. Toronto, Ontario 416-943-8365</p>
+               <p>955 Yange St. Toronto, Ontario 416-272-0841</p>
+               <p>Copyright 2025</p>
     </footer>
 	    
 	    
