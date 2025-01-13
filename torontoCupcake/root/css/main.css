@@ -35,6 +35,13 @@ font-style: italic;
 --accent-color: #CFFBFA;
 --neutral-lt-color: #FFFCF5;
 
+/* typography */
+--fs-base: 1rem;
+    
+/* helper */
+--spacer: 1rem;
+--spacer-dbl: calc(var(--spacer)*2);
+--shadow: 0 0 6px rgba(0,0,0,.3);
 }
 
 
@@ -162,7 +169,21 @@ main.contact form {
     
 }
 main.contact fieldset {
-    border: dashed 1px var(--accent-color)
+    border: dashed 1px var(--primary-color);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.yourInfo li {
+    padding-bottom: 5px;
+}
+.radioList {
+    padding-bottom: 5px;
+}
+.locationForm li{
+    padding-bottom: 5px;
+}
+main.contact legend {
+    font-weight: 700;
 }
 main.contact h3 {
     padding: 20px 0 10px;
@@ -170,7 +191,16 @@ main.contact h3 {
 main.contact p {
     color: var(--secondary-color);
 }
-
+main.contact input#submit {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: 700;
+    padding: 5px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border-color: transparent;
+}
 
 /*policies page start*/
 header.policies h2{
