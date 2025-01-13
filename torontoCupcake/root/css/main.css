@@ -125,9 +125,20 @@ main.aboutUs p {
 /*about us page end*/
 
 /*policies page start*/
-header.policies {
- 
+header.policies h2{
+ text-align: center;
+}
+main.policies {
+    max-width: 70%;
+    margin: auto;
+}
+main.policies section {
+    padding: 20px 0;
+}
+main.policies h3 {
+    padding-bottom: 15px;
 }
 main.policies p {
     color: #58433E;
 }
+
