@@ -37,19 +37,23 @@ h1 {
     font-weight: 700;
 }
 h2 {
+    color: #58433E;
     font-size: 2em;
     font-weight: 700;
     
 }
 h3 {
+    color: #58433E;
     font-size: 1.8em;
     font-weight: 700;
 }
 h4 {
+    color: #58433E;
     font-size: 1.7em;
     font-weight: 700;
 }
 h5 {
+    color: #58433E;
     font-size: 1.6em;
     font-weight: 700;
 }
@@ -62,8 +66,8 @@ p {
 
 header.aboutUs {
     background-color: #D1FBFB;
-    color: #58433E;
     padding: 20px 0;
+    color: #58433E;
 }
 header.aboutUs section.sect1 {
     color: black;
@@ -92,12 +96,12 @@ header.aboutUs section.sect2 p {
 }
 
 main.aboutUs  {
-    color: #58433E;
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
     grid-row-gap: 25px;
     padding: 25px 0;
+    color: #58433E;
 }
   
 main.aboutUs article {
@@ -119,3 +123,11 @@ main.aboutUs p {
     padding-top: 25px;
 }
 /*about us page end*/
+
+/*policies page start*/
+header.policies {
+ 
+}
+main.policies p {
+    color: #58433E;
+}
