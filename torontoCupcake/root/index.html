@@ -4,15 +4,16 @@
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">   
-                <title>*****Template****</title>
-                    <!-- Link to css -->
+                <title>Toronto Cupcake</title>
+                  <!-- link to slick css-->
+                   <link href="css/slick.css" rel="stylesheet" href="text/css">
+                   <link href="css/slick-theme.css" rel="stylesheet" href="text/css">
+                    <!-- Link to reset -->
                     <link href="css/reset.css" rel="stylesheet" type="text/css">
                     <!--font awesome-->
                     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" type="text/css">
-                    <link href="css/main.css" rel="stylesheet" type="text/css">
-                    <!-- link to hosted jquery -->
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
+                    <!--link to my css-->
+                    <link href="css/basic.css" rel="stylesheet" type="text/css">
         </head>
         
        <body>
@@ -92,7 +93,90 @@
                </section>
                <section>
                    <h2>Reviews</h2>
-                   <!--Review carousel-->
+                   
+                   <div class="carousel">
+                        <aside>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>Toronto Cupcakes graciously worked with me on a last minute order. The cupcakes were beautiful and I appreciate their amazing customer service</p>
+                            <p>-Sammy G</p>
+                        </aside>
+                        <aside>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>My go-to spot for any event or gathering! Love Toronto Cupcakes!</p>
+                            <p>-Michael M</p>
+                        </aside>
+                        <aside>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>Maple cupcakes: A+++! Delicious everytime</p>
+                            <p>-Claudia P</p>
+                        </aside>
+                        <aside>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>They helped me with a big order last minute. Great people to work with.</p>
+                            <p>-Keisha B</p>
+                        </aside>
+                        <aside>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>They have made my cupcakes for years now and they are fabulous every time!</p>
+                            <p>-Polly M</p>
+                        </aside>
+                    </div>
+                    
+                    <!-- link to hosted jquery -->
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+                    <!-- link to slick js-->
+                    <script src="scripts/slick.min.js"></script>
+                    
+                    <script>
+                    $(document).ready(function(){
+                        $('.carousel').slick({
+                        centerMode: true,
+                        centerPadding: '60px',
+                        slidesToShow: 3,
+                        responsive: [
+                            {
+                            breakpoint: 768,
+                            settings: {
+                                arrows: false,
+                                centerMode: true,
+                                centerPadding: '40px',
+                                slidesToShow: 3
+                                }
+                            },
+                            {
+                            breakpoint: 480,
+                            settings: {
+                                arrows: false,
+                                centerMode: true,
+                                centerPadding: '40px',
+                                slidesToShow: 1
+                                }
+                            }
+                        ]   
+                    });
+                   </script>
+                    
+	
                </section>
                <section>
                    <h2>Rewards + 10% off</h2>
