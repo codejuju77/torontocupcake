@@ -37,25 +37,27 @@ h1 {
     font-weight: 700;
 }
 h2 {
-    color: #58433E;
+    color: #5A4037;
     font-size: 2em;
     font-weight: 700;
     
 }
 h3 {
-    color: #58433E;
+    color: #5A4037;
     font-size: 1.8em;
     font-weight: 700;
 }
 h4 {
-    color: #58433E;
+    color: #5A4037;
     font-size: 1.7em;
     font-weight: 700;
+    
 }
 h5 {
-    color: #58433E;
+    color: #5A4037;
     font-size: 1.6em;
     font-weight: 700;
+    
 }
 p {
     font-size: 1.6em;
@@ -65,9 +67,9 @@ p {
 /*about us page start*/
 
 header.aboutUs {
-    background-color: #D1FBFB;
+    background-color: #CFFBFA;
     padding: 20px 0;
-    color: #58433E;
+    color: #5A4037;
 }
 header.aboutUs section.sect1 {
     color: black;
@@ -101,7 +103,7 @@ main.aboutUs  {
     text-align: center;
     grid-row-gap: 25px;
     padding: 25px 0;
-    color: #58433E;
+    color: #5A4037;
 }
   
 main.aboutUs article {
@@ -139,6 +141,8 @@ main.policies h3 {
     padding-bottom: 15px;
 }
 main.policies p {
-    color: #58433E;
+    color: #5A4037;
+    padding: 10px 0 15px;
 }
 
+/*policies page end*/
