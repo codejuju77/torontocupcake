@@ -28,6 +28,17 @@ font-weight: 700;
 font-style: italic;
 */
 
+:root {
+/* colors */
+--primary-color: #EB9AB0;
+--secondary-color: #5A4037;
+--accent-color: #CFFBFA;
+--neutral-lt-color: #FFFCF5;
+
+}
+
+
+
 html {
     font-size: 10px;
     font-family: "futura-pt", sans-serif;
@@ -126,9 +137,24 @@ main.aboutUs p {
 }
 /*about us page end*/
 
+/*contact page*/
+header.contact {
+    background-image: url(../images/contactHeader.jpeg);
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: 200px;
+}
+header.contact h2 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+
 /*policies page start*/
 header.policies h2{
  text-align: center;
+padding-bottom: 20px;
 }
 main.policies {
     max-width: 70%;
@@ -142,7 +168,15 @@ main.policies h3 {
 }
 main.policies p {
     color: #5A4037;
-    padding: 10px 0 15px;
+    padding: 10px 0 25px;
 }
 
 /*policies page end*/
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--neutral-lt-color);
+    display: flex;
+    width: 100%;
+    justify-items: center;
+}
