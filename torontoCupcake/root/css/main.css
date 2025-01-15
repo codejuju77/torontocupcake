@@ -251,6 +251,7 @@ nav img {
     font-family: var(--primary-font);
     color: var(--neutral-lt-color);
     height: 20rem;
+    margin: 0 10px;
     
     
 }
