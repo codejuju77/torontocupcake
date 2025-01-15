@@ -248,12 +248,28 @@ nav img {
     border: 1px solid var(--secondary-color);
     font-family: var(--primary-font);
     color: var(--neutral-lt-color);
-    height: 20rem;
+    height: auto;
+    width: auto;
     margin: 0 10px;
-    
-    
+    text-align: center;
 }
-
+.fa-star {
+    font-size: 2.1rem;
+    padding: 1.5rem .1rem;
+}
+.carousel article p {
+    padding: 0 2rem 2rem;
+}
+.carousel article p:last-of-type {
+    font-style: italic;
+}
+.slick-next {
+    right: 20px;
+    z-index: 100;
+}
+.slick-dots li button:before {
+    font-size: 10px;
+}
 /* ************* FOOTER ************ */
 footer {
     background-color: var(--primary-color);
