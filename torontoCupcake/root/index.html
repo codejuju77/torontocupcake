@@ -4,20 +4,32 @@
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">   
-                <title>*****Template****</title>
-                    <!-- Link to css -->
+                <title>Toronto Cupcake</title>
+                  <!-- link to slick css-->
+                   <link href="css/slick.css" rel="stylesheet" href="text/css">
+                   <link href="css/slick-theme.css" rel="stylesheet" href="text/css">
+                    <!-- Link to reset -->
                     <link href="css/reset.css" rel="stylesheet" type="text/css">
-                    <link href="css/main.css" rel="stylesheet" type="text/css">
-                    <!-- link to hosted jquery -->
-                    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
                     <!--font awesome-->
                     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" type="text/css">
+                    <!--Google & adobe font-->
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+                    <link rel="stylesheet" href="https://use.typekit.net/puj2pqh.css">
+                    <!--link to my css-->
+                    <link href="css/main.css" rel="stylesheet" type="text/css">
+                    <!-- link to hosted jquery -->
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+                    <!-- link to slick js-->
+                    <script src="scripts/slick.min.js"></script>
+                    
         </head>
         
        <body>
            <nav>
              <label for="showMenu" class="showMenu"><span class="fa-solid fa-bars"></span></label>
-               <input type="checkbox" id="showMenu" role="button">
+               <input type="checkbox" id="showMenu" role="button" aria-pressed="true">
                <ul class="menu">
                    <li><a href="pages/shop.html">Shop</a></li>
                    <li><a href="pages/aboutUs.html">About Us</a></li>
@@ -25,74 +37,134 @@
                    <li><a href="pages/policies.html">Policies</a></li>
                    <li><a href="pages/account.html">Account</a></li>
                </ul>
-               <h1>Toronto Cupcakes</h1>
-               <img src="images/cupcake.svg" alt="cupcake svg">   
+               <a href="#" id="logo"><h1>Toronto Cupcake</h1><img class="logo" src="images/ltcupcake.png" alt="cupcake logo"></a>
            </nav>
            <header class="index">
                <section>
-                   <img src="" alt="">
+                   <img src="images/herosm.jpg" alt="holiday cupcake">
                    <p>Spread joy with sweet treats</p>
-                   <a href="pages/shop.html"></a>
+                   <a href="pages/shop.html" class="button">Order Now</a>
                </section>
            </header>
            <main class="index">
                <section>
-                   <article>
-                       <figure></figure>
+                   <figure>
+                       <img src="images/featured1.jpg" alt="holiday cupcakes">
                        <figcaption>Gift holiday cheer</figcaption>
-                   </article>
-                   <article>
-                       <figure></figure>
+                   </figure>
+                   <figure>
+                       <img src="images/featured2.jpg" alt="birthday cupcakes">
                        <figcaption>Birthday wishes</figcaption>
-                   </article>
-                   <article>
-                       <figure></figure>
+                   </figure>
+                   <figure>
+                       <img src="images/featured3.jpg" alt="autumn cupcakes">
                        <figcaption>Warm autumn treats</figcaption>
-                   </article>
+                   </figure>
                </section>
                <section>
                    <h2>Best Sellers</h1>
                    <h3>Our most popular creations</h3>
                    <article>
-                       <a href="">
-                       <figure></figure>
-                       <figcaption>Cocoa Cupcakes</figcaption>
+                       <a href="#">
+                            <img src="images/best1sm.jpg" alt="cocoa cupcakes">
+                            <p>Cocoa Cupcakes</p>
                        </a>
-                       <p>$18.95/dozen</p>
+                            <p class="price">$18.95/dozen</p>
                    </article>
                    <article>
-                       <a href="">
-                       <figure></figure>
-                       <figcaption>Maple Cupcakes</figcaption>
+                       <a href="#">
+                           <img src="images/best2sm.jpg" alt="maple cupcakes">
+                           <p>Maple Cupcakes</p>
                        </a>
-                       <p>$18.95/dozen</p>
+                           <p class="price">$18.95/dozen</p>
                    </article>
                    <article>
-                       <a href="">
-                       <figure></figure>
-                       <figcaption>Chocolate Ganache</figcaption>
+                       <a href="#">
+                           <img src="images/best3sm.jpg" alt="chocolate ganache cupcakes">
+                           <p>Chocolate Ganache</p>
                        </a>
-                       <p>$18.95/dozen</p>
+                           <p class="price">$18.95/dozen</p>
                    </article>
                    <article>
-                       <a href="">
-                       <figure></figure>
-                       <figcaption>Unicorn Cupcakes</figcaption>
+                       <a href="#">
+                           <img src="images/best4sm.jpg" alt="unicorn cupcakes">
+                           <p>Unicorn Cupcakes</p>
                        </a>
-                       <p>$18.95/dozen</p>
+                           <p class="price">$18.95/dozen</p>
                    </article>
                </section>
                <section>
                    <h2>Instagram</h2>
-                   <a href=""></a>
-                   <a href=""></a>
-                   <a href=""></a>
-                   <a href=""></a>
+                   <a href="#"><img src="images/ig1sm.jpg" alt="instagram photo one"></a>
+                   <a href="#"><img src="images/ig2sm.jpg" alt="instagram photo two"></a>
+                   <a href="#"><img src="images/ig3sm.jpg" alt="instagram photo three"></a>
+                   <a href="#"><img src="images/ig4sm.jpg" alt="instagram photo four"></a>
                </section>
                <section>
                    <h2>Reviews</h2>
-                   <!--Review carousel-->
+                   
+                   <section class="carousel">
+                        <article>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>Toronto Cupcakes graciously worked with me on a last minute order. The cupcakes were beautiful and I appreciate their amazing customer service</p>
+                            <p>-Sammy G</p>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>My go-to spot for any event or gathering! Love Toronto Cupcakes!</p>
+                            <p>-Michael M</p>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>Maple cupcakes: A+++! Delicious everytime</p>
+                            <p>-Claudia P</p>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>They helped me with a big order last minute. Great people to work with.</p>
+                            <p>-Keisha B</p>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>They have made my cupcakes for years now and they are fabulous every time!</p>
+                            <p>-Polly M</p>
+                        </article>
+                    </section>
                </section>
+                    <script>
+                    $(document).ready(function(){
+                    $('.carousel').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        // autoplay: true,
+                        autoplaySpeed: 1000,
+                        dots: true,
+                        centerMode: true,
+                        centerPadding: '50px'
+                        });
+                    })
+                   </script>
+	
                <section>
                    <h2>Rewards + 10% off</h2>
                    <form action="#" method="post" id="mainContact" enctype="text/plain">
@@ -105,13 +177,16 @@
                </section>
            </main>
             <footer>
-               <i class="fa-brands fa-instagram"></i>
-               <i class="fa-brands fa-facebook"></i>
-               <i class="fa-brands fa-snapchat"></i>
-               <p>2405 Adelaide St. Toronto, Ontario 416-943-8365</p>
-               <p>955 Yange St. Toronto, Ontario 416-272-0841</p>
-               <p>Copyright 2025</p>
+                  <ul class="socialContainer">
+                      <li><a href="#"><i class="social fa-brands fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="social fa-brands fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="social fa-brands fa-snapchat"></i></a></li>
+                   </ul>
+                   <ul class="locations">
+                       <li class="left">2405 Adelaide St. Toronto, Ontario 416-943-8365</li>
+                       <li class="right">955 Yange St. Toronto, Ontario 416-272-0841</li>
+                    </ul>
+                    <p>Copyright 2025</p>
            </footer>
-
        </body>
 </html>

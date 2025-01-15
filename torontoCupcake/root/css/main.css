@@ -2,47 +2,258 @@
 
 Fonts Added:
 
+Futura PT light
+font-family: "futura-pt", sans-serif;
+font-weight: 300;
+font-style: normal;
+
+Futura PT light oblique
+font-family: "futura-pt", sans-serif;
+font-weight: 300;
+font-style: italic;
+
 Futura PT Book
 font-family: "futura-pt", sans-serif;
 font-weight: 400;
 font-style: normal;
+
 Futura PT Book Oblique
 font-family: "futura-pt", sans-serif;
 font-weight: 400;
 font-style: italic;
+
+Futura PT Medium
+font-family: "futura-pt", sans-serif;
+font-weight: 500;
+font-style: normal;
+
+Futura PT Medium Oblique
+font-family: "futura-pt", sans-serif;
+font-weight: 500;
+font-style: italic;
+
+Futura PT Demi
+font-family: "futura-pt", sans-serif;
+font-weight: 600;
+font-style: normal;
+
+Futura PT Demi Oblique
+font-family: "futura-pt", sans-serif;
+font-weight: 600;
+font-style: italic;
+
 Futura PT Heavy
 font-family: "futura-pt", sans-serif;
 font-weight: 700;
 font-style: normal;
+
 Futura PT Heavy Oblique
 font-family: "futura-pt", sans-serif;
 font-weight: 700;
 font-style: italic;
+
 Futura PT Bold
 font-family: "futura-pt-bold", sans-serif;
 font-weight: 700;
 font-style: normal;
+
 Futura PT Bold Oblique
 font-family: "futura-pt-bold", sans-serif;
 font-weight: 700;
 font-style: italic;
+
+.merriweather-light {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.merriweather-regular {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.merriweather-bold {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.merriweather-black {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.merriweather-light-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.merriweather-regular-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.merriweather-bold-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.merriweather-black-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
 */
 
 :root {
-/* colors */
---primary-color: #EB9AB0;
---secondary-color: #5A4037;
---accent-color: #CFFBFA;
---neutral-lt-color: #FFFCF5;
-
 /* typography */
---fs-base: 1rem;
+    --primary-font: "futura-pt", sans-serif;
+    --headline-font: "Merriweather", serif;
+    --fw-b: 700;
+    --fs-base: 1rem;
     
+/* colors */
+    --primary-color: #EB9AB0;
+    --secondary-color: #5A4037;
+    --accent-color: #CFFBFA;
+    --neutral-lt-color: #FFFCF5;
+
 /* helper */
---spacer: 1rem;
---spacer-dbl: calc(var(--spacer)*2);
---shadow: 0 0 6px rgba(0,0,0,.3);
+    --spacer: 1rem;
+    --spacer-dbl: calc(var(--spacer)*2);
+    --shadow: 0 0 6px rgba(0,0,0,.3);
 }
+html {
+    font-size: var(--fs-base);
+    font-family: var(--primary-font);
+}
+/* *********** NAVIGATION *********** */
+nav {
+    position: absolute;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--neutral-lt-color);
+    justify-content: space-between;
+}
+nav ul.menu {
+    font-size: var(--fs-base);
+    display: none;
+}
+nav li {
+    background-color: var(--primary-color);
+    text-align: center;
+    border-bottom: solid 1px #fff;
+}
+nav li:first-child {
+    border-top: solid 1px #fff;
+}
+nav a {
+    display: block;
+    padding: .6em;
+    color: var(--neutral-lt-color);
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: var(--neutral-lt-color);
+    color: var(--primary-color);
+}
+nav a:active {
+    background-color: var(--neutral-lt-color);
+    color: var(--primary-color);
+}
+.showMenu {
+    background-color: var(--primary-color);
+    color: var(--neutral-lt-color);
+    text-align: left;
+    padding: .9em .5em .5em;
+    display: block;
+    cursor: pointer;
+    font-size: 1.4rem;
+    height: 36px;
+    padding-top: 8px;
+    align-self: flex-start;
+}
+.fa-solid fa-chevron-down {
+    font-size: var(--fs-base);
+}
+nav input[type=checkbox]:checked ~ ul.menu {
+    display: block;
+}
+nav input[type=checkbox] {
+    display: none;
+}
+nav #logo {
+    position: absolute;
+    right: .6rem;
+    top: .5rem;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    font-family: var(--headline-font);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1.3rem;
+    padding: 0;
+}
+nav img {
+    height: 22px;
+    width: 22px;
+}
+
+
+
+/* ************* FOOTER ************ */
+footer {
+    background-color: var(--primary-color);
+    color: var(--neutral-lt-color);
+    width: 100%;
+    justify-items: center;
+    font-size: var(--fs-base);
+    padding: .6rem 0 var(--spacer) 0;
+}
+.socialContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social {
+    font-size: 1.6rem;
+}
+footer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--neutral-lt-color);
+    background-color: rgba(255,255,255,.2);
+    border: solid 1px var(--neutral-lt-color);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+.locations {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.left, .right {
+    max-width: 8em;
+}
+footer li {
+    margin: var(--spacer);
+    line-height: 1.6;
+}
+footer p {
+    font-size: .8rem;
+    text-align: center;
 
 /*all pages*/
 
@@ -233,11 +444,3 @@ main.policies p {
 }
 
 /*policies page end*/
-
-footer {
-    background-color: var(--primary-color);
-    color: var(--neutral-lt-color);
-    display: flex;
-    width: 100%;
-    justify-items: center;
-}

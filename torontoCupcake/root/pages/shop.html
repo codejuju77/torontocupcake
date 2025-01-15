@@ -5,13 +5,19 @@
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">   
                 <title>Shop | Toronto Cupcakes</title>
-                    <!-- Link to css -->
+                    <!-- Link to reset -->
                     <link href="../css/reset.css" rel="stylesheet" type="text/css">
-                    <link href="../css/main.css" rel="stylesheet" type="text/css">
                     <!-- link to hosted jquery -->
                     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
                     <!--font awesome-->
                     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" type="text/css">
+                    <!--Google & adobe font-->
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+                    <link rel="stylesheet" href="https://use.typekit.net/puj2pqh.css">
+                    <!-- Link to css -->
+                    <link href="../css/main.css" rel="stylesheet" type="text/css">
         </head>
         <body>
             <nav>
@@ -24,10 +30,7 @@
                    <li><a href="policies.html">Policies</a></li>
                    <li><a href="account.html">Account</a></li>
                </ul>
-               <a href="../index.html">
-               <h1>Toronto Cupcakes</h1>
-               <img src="../images/cupcake.svg" alt="cupcake svg">
-               </a>   
+               <a href="../index.html" id="logo"><h1>Toronto Cupcakes</h1><img src="../images/ltcupcake.png" alt="cupcake logo"></a>   
             </nav>
             <header class="shop">
                 <section class="miniNav">
@@ -44,53 +47,53 @@
                 <section>
                     <h2>Holiday Collection</h2>
                     <a href="#">view more <i class="fa-solid fa-chevron-right"></i></a>
-                    <article>
-                        <figure></figure>
-                        <figcaption>Red Velvet</figcaption>
-                        <p>$3.50</p>
-                    </article>
-                    <article>
-                        <figure></figure>
-                        <figcaption>Peppermint Mocha</figcaption>
-                        <p>$3.50</p>
-                    </article>
-                    <article>
-                        <figure></figure>
-                        <figcaption>Cranberry Spice</figcaption>
-                        <p>$3.50</p>
-                    </article>
-                    <article>
-                        <figure></figure>
-                        <figcaption>Chocolate</figcaption>
-                        <p>$3.50</p>
-                    </article>
+                    <figure>
+                        <img src="../images/holiday1sm.jpg" alt="red velvet">
+                        <p>Red Velvet</p>
+                        <p class="price">$3.50</p>
+                    </figure>
+                    <figure>
+                        <img src="../images/holiday2sm.jpg" alt="peppermint mocha">
+                        <p>Peppermint Mocha</p>
+                        <p class="price">$3.50</p>
+                    </figure>
+                    <figure>
+                        <img src="../images/holiday3sm.jpg" alt="cranberry spice">
+                        <p>Cranberry Spice</p>
+                        <p class="price">$3.50</p>
+                    </figure>
+                    <figure>
+                        <img src="../images/holiday4sm.jpg" alt="chocolate cupcakes">
+                        <p>Chocolate</p>
+                        <p class="price">$3.50</p>
+                    </figure>
                 </section>
                 <section>
                    <h2>Best Sellers</h1>
                    <article>
                        <a href="#">
-                       <figure></figure>
+                       <figure><img src="../images/best1sm.jpg" alt="cocoa cupcakes"></figure>
                        <figcaption>Cocoa Cupcakes</figcaption>
                        </a>
                        <p>$18.95/dozen</p>
                    </article>
                    <article>
                        <a href="#">
-                       <figure></figure>
+                       <figure><img src="../images/best2sm.jpg" alt="maple cupcakes"></figure>
                        <figcaption>Maple Cupcakes</figcaption>
                        </a>
                        <p>$18.95/dozen</p>
                    </article>
                    <article>
                        <a href="#">
-                       <figure></figure>
+                       <figure><img src="../images/best3sm.jpg" alt="chocolate ganache"></figure>
                        <figcaption>Chocolate Ganache</figcaption>
                        </a>
                        <p>$18.95/dozen</p>
                    </article>
                    <article>
                        <a href="#">
-                       <figure></figure>
+                       <figure><img src="../images/best4sm.jpg" alt="unicorn cupcakes"></figure>
                        <figcaption>Unicorn Cupcakes</figcaption>
                        </a>
                        <p>$18.95/dozen</p>
@@ -100,26 +103,22 @@
                     <h2>Occasions</h2>
                     <a href="#">view more <i class="fa-solid fa-chevron-right"></i></a>
                     <article>
-                        <figure></figure>
+                        <figure><img src="../images/occasion1sm.jpg" alt="baby shower cupcakes"></figure>
                         <figcaption>Baby Shower</figcaption>
                     </article>
                     <article>
-                        <figure></figure>
+                        <figure><img src="../images/occasion2sm.jpg" alt="birthday cupcakes"></figure>
                         <figcaption>Birthday</figcaption>
                     </article>
                     <article>
-                        <figure></figure>
+                        <figure><img src="../images/occasion3sm.jpg" alt="wedding cupcakes"></figure>
                         <figcaption>Wedding</figcaption>
-                    </article>
-                    <article>
-                        <figure></figure>
-                        <figcaption>Congrats</figcaption>
                     </article>
                 </section>
                 <section>
                     <h2>Custom Orders</h2>
                     <article>
-                        <img src="" alt="">
+                        <img src="../images/customsm.jpg" alt="custom cupcake">
                         <a href="">See Gallery <i class="fa-solid fa-chevron-right"></i></a>
                         <a href="contact.html">Contact Us <i class="fa-solid fa-chevron-right"></i></a>
                     </article>
@@ -136,15 +135,17 @@
                </section>
             </main>
             
-            
-            
             <footer>
-               <i class="fa-brands fa-instagram"></i>
-               <i class="fa-brands fa-facebook"></i>
-               <i class="fa-brands fa-snapchat"></i>
-               <p>2405 Adelaide St. Toronto, Ontario 416-943-8365</p>
-               <p>955 Yange St. Toronto, Ontario 416-272-0841</p>
-               <p>Copyright 2025</p>
+                  <ul class="socialContainer">
+                      <li><a href="#"><i class="social fa-brands fa-instagram"></i></a></li>
+                      <li><a href="#"><i class="social fa-brands fa-facebook-f"></i></a></li>
+                      <li><a href="#"><i class="social fa-brands fa-snapchat"></i></a></li>
+                   </ul>
+                   <ul class="locations">
+                       <li class="left">2405 Adelaide St. Toronto, Ontario 416-943-8365</li>
+                       <li class="right">955 Yange St. Toronto, Ontario 416-272-0841</li>
+                    </ul>
+                    <p>Copyright 2025</p> 
            </footer>
         </body>
 </html>
