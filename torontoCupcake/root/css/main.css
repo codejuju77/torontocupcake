@@ -137,7 +137,6 @@ html {
  
 h1 {
     font-size: 2.2em;
-    
 }
     
 h2 {
@@ -239,7 +238,6 @@ nav #logo {
     font-family: var(--headline-font);
     font-style: italic;
     font-weight: 300;
-
     padding: 0;
 }
 nav img {
@@ -360,6 +358,7 @@ header.contact {
     background-position: center;
     max-width: 100%;
     height: 200px;
+    padding-top: 30px;
 }
 
 header.contact h2 {
@@ -413,7 +412,9 @@ main.contact input#submit {
 }
 
 /*policies page start*/
-
+header.policies {
+    padding-top: 30px;
+}
 header.policies h2 {
     text-align: center;
     padding-bottom: 20px;
