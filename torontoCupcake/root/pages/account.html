@@ -5,13 +5,24 @@
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1">   
                 <title>Log in | Toronto Cupcake</title>
-                    <!-- Link to css -->
-                    <link href="../css/reset.css" rel="stylesheet" type="text/css">
+                   <!-- link to slick css-->
+                   <link href="../css/slick.css" rel="stylesheet" href="text/css">
+                   <link href="../css/slick-theme.css" rel="stylesheet" href="text/css">
+                   <!-- CSS reset -->
+                   <link href="../css/reset.css" rel="stylesheet" type="text/css">
                     <!--font awesome-->
                     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" type="text/css">
+                    <!--Google & adobe font-->
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+                    <link rel="stylesheet" href="https://use.typekit.net/puj2pqh.css">
+                    <!--link to my css-->
                     <link href="../css/basic.css" rel="stylesheet" type="text/css">
                     <!-- link to hosted jquery -->
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+                    <!-- link to slick js-->
+                    <script src="../scripts/slick.min.js"></script>
         </head>
         <body>
             <nav>
@@ -24,18 +35,12 @@
                    <li><a href="pages/policies.html">Policies</a></li>
                    <li><a href="pages/account.html">Account</a></li>
                </ul>
-               <a href="../index.html">
-               <h1>Toronto Cupcakes</h1>
-               <img src="../images/cupcake.svg" alt="cupcake svg">
-               </a>   
+               <a href="../index.html" id="logo"><h1>Toronto Cupcakes</h1><img src="../images/ltcupcake.png" alt="cupcake logo"></a>   
             </nav>
             <main class="internal">
                <section>
                 <h2>Log In</h2>
                     <form action="#" method="post" id="mainContact" enctype="text/plain">
-                        <fieldset class="account">
-                        <!-- is legend and fieldset needed?
-                        <legend>Log in</legend> -->
                             <ul>
                                 <li>
                                     <label for="email">E-mail</label>
@@ -46,23 +51,67 @@
                                     <input type="password" id="password" name="password" required>
                                 </li>
                             </ul>
-                        </fieldset>
                         <input type="submit" id="logIn" class="btn" value="Log in">
                         <input type="submit" id="create" class="btn" value="Create account">
                    </form>
                 
                 </section>
-                    <section>
-                       <h2>Reviews</h2>
-                       <!--Review carousel-->
+               <section>
+                   <h2>Reviews</h2>
+                   
+                   <section class="carousel">
+                        <article>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>Toronto Cupcakes graciously worked with me on a last minute order. The cupcakes were beautiful and I appreciate their amazing customer service</p>
+                            <p>-Sammy G</p>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>My go-to spot for any event or gathering! Love Toronto Cupcakes!</p>
+                            <p>-Michael M</p>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>Maple cupcakes: A+++! Delicious everytime</p>
+                            <p>-Claudia P</p>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>They helped me with a big order last minute. Great people to work with.</p>
+                            <p>-Keisha B</p>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>They have made my cupcakes for years now and they are fabulous every time!</p>
+                            <p>-Polly M</p>
+                        </article>
+                    </section>
                    </section>
                <section>
                    <h2>Rewards + 10% off</h2>
                    <form action="#" method="post" id="mainContact" enctype="text/plain">
-                       <fieldset>
                             <label for="email">E-mail</label>
                             <input type="text" id="email" name="email" required>
-                       </fieldset>
                            <input type="submit" id="subscribe" class="btn" value="Subscribe">
                    </form>
                </section>
@@ -78,8 +127,21 @@
                        <li class="left">2405 Adelaide St. Toronto, Ontario 416-943-8365</li>
                        <li class="right">955 Yange St. Toronto, Ontario 416-272-0841</li>
                     </ul>
-                    <p class"copy">Copyright 2025</p>
+                    <p>Copyright 2025</p>
            </footer>
+           <script>
+                    $(document).ready(function(){
+                    $('.carousel').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        // autoplay: true,
+                        autoplaySpeed: 1000,
+                        dots: true,
+                        centerMode: true,
+                        centerPadding: '50px'
+                        });
+                    })
+                   </script>
         </body>
 </html>
        

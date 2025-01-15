@@ -12,14 +12,24 @@
                     <link href="css/reset.css" rel="stylesheet" type="text/css">
                     <!--font awesome-->
                     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" type="text/css">
+                    <!--Google & adobe font-->
+                    <link rel="preconnect" href="https://fonts.googleapis.com">
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+                    <link rel="stylesheet" href="https://use.typekit.net/puj2pqh.css">
                     <!--link to my css-->
                     <link href="css/basic.css" rel="stylesheet" type="text/css">
+                    <!-- link to hosted jquery -->
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+                    <!-- link to slick js-->
+                    <script src="scripts/slick.min.js"></script>
+                    
         </head>
         
        <body>
            <nav>
              <label for="showMenu" class="showMenu"><span class="fa-solid fa-bars"></span></label>
-               <input type="checkbox" id="showMenu" role="button">
+               <input type="checkbox" id="showMenu" role="button" aria-pressed="true">
                <ul class="menu">
                    <li><a href="pages/shop.html">Shop</a></li>
                    <li><a href="pages/aboutUs.html">About Us</a></li>
@@ -27,14 +37,13 @@
                    <li><a href="pages/policies.html">Policies</a></li>
                    <li><a href="pages/account.html">Account</a></li>
                </ul>
-               <h1>Toronto Cupcakes</h1>
-               <img src="images/cupcake.svg" alt="cupcake svg">   
+               <a href="#" id="logo"><h1>Toronto Cupcake</h1><img class="logo" src="images/ltcupcake.png" alt="cupcake logo"></a>
            </nav>
            <header class="index">
                <section>
                    <img src="images/herosm.jpg" alt="holiday cupcake">
                    <p>Spread joy with sweet treats</p>
-                   <a href="pages/shop.html"></a>
+                   <a href="pages/shop.html" class="button">Order Now</a>
                </section>
            </header>
            <main class="index">
@@ -94,8 +103,8 @@
                <section>
                    <h2>Reviews</h2>
                    
-                   <div class="carousel">
-                        <aside>
+                   <section class="carousel">
+                        <article>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -103,8 +112,8 @@
                             <i class="fa-solid fa-star"></i>
                             <p>Toronto Cupcakes graciously worked with me on a last minute order. The cupcakes were beautiful and I appreciate their amazing customer service</p>
                             <p>-Sammy G</p>
-                        </aside>
-                        <aside>
+                        </article>
+                        <article>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -112,8 +121,8 @@
                             <i class="fa-solid fa-star"></i>
                             <p>My go-to spot for any event or gathering! Love Toronto Cupcakes!</p>
                             <p>-Michael M</p>
-                        </aside>
-                        <aside>
+                        </article>
+                        <article>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -121,8 +130,8 @@
                             <i class="fa-solid fa-star"></i>
                             <p>Maple cupcakes: A+++! Delicious everytime</p>
                             <p>-Claudia P</p>
-                        </aside>
-                        <aside>
+                        </article>
+                        <article>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -130,8 +139,8 @@
                             <i class="fa-solid fa-star"></i>
                             <p>They helped me with a big order last minute. Great people to work with.</p>
                             <p>-Keisha B</p>
-                        </aside>
-                        <aside>
+                        </article>
+                        <article>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -139,54 +148,23 @@
                             <i class="fa-solid fa-star"></i>
                             <p>They have made my cupcakes for years now and they are fabulous every time!</p>
                             <p>-Polly M</p>
-                        </aside>
-                    </div>
-                    
-                    <!-- link to hosted jquery -->
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-                    <!-- link to slick js-->
-                    <script src="scripts/slick.min.js"></script>
-                    
+                        </article>
+                    </section>
+               </section>
                     <script>
                     $(document).ready(function(){
-                        $('.carousel').slick({
-                        centerMode: true,
-                        centerPadding: '60px',
-                        slidesToShow: 3,
-                        responsive: [
-                            {
-                            breakpoint: 768,
-                            settings: {
-                                arrows: false,
-                                centerMode: true,
-                                centerPadding: '40px',
-                                slidesToShow: 3
-                                }
-                            },
-                            {
-                            breakpoint: 480,
-                            settings: {
-                                arrows: false,
-                                centerMode: true,
-                                centerPadding: '40px',
-                                slidesToShow: 1
-                                }
-                            }
-                        ]   
-                    });
-                   </script>
-                    
                     $('.carousel').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    // autoplay: true,
-    autoplaySpeed: 1000,
-    dots: true,
-    centerMode: true,
-    centerPadding: '50px'
-  });
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        // autoplay: true,
+                        autoplaySpeed: 1000,
+                        dots: true,
+                        centerMode: true,
+                        centerPadding: '50px'
+                        });
+                    })
+                   </script>
 	
-               </section>
                <section>
                    <h2>Rewards + 10% off</h2>
                    <form action="#" method="post" id="mainContact" enctype="text/plain">
@@ -208,8 +186,7 @@
                        <li class="left">2405 Adelaide St. Toronto, Ontario 416-943-8365</li>
                        <li class="right">955 Yange St. Toronto, Ontario 416-272-0841</li>
                     </ul>
-                    <p class"copy">Copyright 2025</p>
-               
+                    <p>Copyright 2025</p>
            </footer>
        </body>
 </html>
