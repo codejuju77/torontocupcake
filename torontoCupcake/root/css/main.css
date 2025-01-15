@@ -212,16 +212,16 @@ nav a:active {
     background-color: var(--primary-color);
     color: var(--neutral-lt-color);
     text-align: left;
-    padding: .9em .5em .5em;
+    padding: 1.44rem .8rem .8rem;
     display: block;
     cursor: pointer;
-    font-size: 1.4rem;
+    font-size: 2.24rem;
     height: 36px;
     padding-top: 8px;
     align-self: flex-start;
 }
 .fa-solid fa-chevron-down {
-    font-size: var(--fs-base);
+    font-size: 1.6rem;
 }
 nav input[type=checkbox]:checked ~ ul.menu {
     display: block;
@@ -232,7 +232,7 @@ nav input[type=checkbox] {
 nav #logo {
     position: absolute;
     right: .6rem;
-    top: .5rem;
+    top: .8rem;
     display: flex;
     align-items: center;
     gap: .6rem;
@@ -255,8 +255,8 @@ footer {
     color: var(--neutral-lt-color);
     width: 100%;
     justify-items: center;
-    font-size: var(--fs-base);
-    padding: .6rem 0 var(--spacer) 0;
+    font-size: 1.6rem;
+    padding: .96rem 0 1.6rem 0;
 }
 .socialContainer {
     display: flex;
@@ -264,7 +264,7 @@ footer {
     align-items: center;
 }
 .social {
-    font-size: 1.6rem;
+    font-size: 2.56rem;
 }
 footer a {
     display: flex;
@@ -288,11 +288,11 @@ footer a {
     max-width: 8em;
 }
 footer li {
-    margin: var(--spacer);
+    margin: 1.6rem;
     line-height: 1.6;
 }
 footer p {
-    font-size: .8rem;
+    font-size: 1.28rem;
     text-align: center; }
 
 
