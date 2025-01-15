@@ -116,8 +116,6 @@ font-style: italic;
 /* typography */
     --primary-font: "futura-pt", sans-serif;
     --headline-font: "Merriweather", serif;
-    --fw-b: 700;
-    --fs-base: 1rem;
     
 /* colors */
     --primary-color: #EB9AB0;
@@ -244,8 +242,17 @@ nav img {
     height: 22px;
     width: 22px;
 }
-
-
+/* *********** REVIEW CAROUSEL ****** */
+.carousel article {
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    font-family: var(--primary-font);
+    color: var(--neutral-lt-color);
+    height: 20rem;
+    margin: 0 10px;
+    
+    
+}
 
 /* ************* FOOTER ************ */
 footer {
