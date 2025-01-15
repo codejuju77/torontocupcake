@@ -253,18 +253,15 @@ footer li {
 }
 footer p {
     font-size: .8rem;
-    text-align: center;
+    text-align: center; }
 
 /*all pages*/
-
-html {
-    font-size: 10px;
-    font-family: "futura-pt", sans-serif;
-}
+ 
 h1 {
     font-size: 2.4em;
     font-weight: 700;
 }
+    
 h2 {
     color: #5A4037;
     font-size: 2em;
@@ -306,13 +303,6 @@ header.aboutUs {
     padding: 20px 0;
     color: #5A4037;
 }
-/*
-header.aboutUs section.sect1 {
-    color: black;
-    font-size: 8px;
-    margin-left: 10px;
-}
-*/
 
 header.aboutUs section.sect2 {
     display: grid;
