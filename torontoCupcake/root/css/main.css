@@ -316,7 +316,22 @@ footer p {
     font-size: 1.28rem;
     text-align: center; }
 
+/*shop page start*/
+header.shop {
+    padding: 30px 0;
+}
+main.shop {
+    max-width: 70%;
+    margin: auto;
+}
+main.shop section.twoxtwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
 
+
+/*shop page end*/
 /*about us page start*/
 
 header.aboutUs {
