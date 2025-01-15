@@ -132,8 +132,48 @@ font-style: italic;
 }
 html {
     font-size: var(--fs-base);
-    font-family: var(--primary-font);
+    font-family: var(--primary-font);   
 }
+ 
+h1 {
+    font-size: 2.4em;
+    font-weight: 700;
+}
+    
+h2 {
+    color: #5A4037;
+    font-size: 2em;
+    font-weight: 700;
+    
+}
+h3 {
+    color: #5A4037;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+h4 {
+    color: #5A4037;
+    font-size: 1.7em;
+    font-weight: 700;
+    
+}
+h5 {
+    color: #5A4037;
+    font-size: 1.6em;
+    font-weight: 700;
+    
+}
+p {
+    font-size: 1.6em;
+    line-height: 1.5em;
+}
+.miniNav {
+    color: black;
+    font-size: 8px;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
 /* *********** NAVIGATION *********** */
 nav {
     position: absolute;
@@ -255,46 +295,6 @@ footer p {
     font-size: .8rem;
     text-align: center; }
 
-/*all pages*/
- 
-h1 {
-    font-size: 2.4em;
-    font-weight: 700;
-}
-    
-h2 {
-    color: #5A4037;
-    font-size: 2em;
-    font-weight: 700;
-    
-}
-h3 {
-    color: #5A4037;
-    font-size: 1.8em;
-    font-weight: 700;
-}
-h4 {
-    color: #5A4037;
-    font-size: 1.7em;
-    font-weight: 700;
-    
-}
-h5 {
-    color: #5A4037;
-    font-size: 1.6em;
-    font-weight: 700;
-    
-}
-p {
-    font-size: 1.6em;
-    line-height: 1.5em;
-}
-.miniNav {
-    color: black;
-    font-size: 8px;
-    margin-left: 10px;
-    padding-top: 10px;
-}
 
 /*about us page start*/
 
