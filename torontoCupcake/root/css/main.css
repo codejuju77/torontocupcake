@@ -518,7 +518,7 @@ footer p {
 
 
 header.shop {
-    padding: 40px 0 20px;
+    padding: 35px 0 20px;
 }
 main.shop {
     max-width: 80%;
@@ -763,13 +763,14 @@ main.contact p {
 }
 main.contact input#submit {
     background-color: var(--accent-color);
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-weight: 700;
     padding: 5px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
     border-color: transparent;
+    cursor: pointer;
 }
 
 /*policies page start*/
