@@ -37,10 +37,12 @@
                </ul>
                <a href="../index.html" id="logo"><h1>Toronto Cupcakes</h1><img src="../images/ltcupcake.png" alt="cupcake logo"></a>   
             </nav>
+            <header class="account">
+                <h2 class="loginPadding">Log In</h2>
+            </header>
             <main class="account">
-               <section>
-                <h2>Log In</h2>
-                    <form action="#" method="post" id="mainContact" enctype="text/plain">
+               <section class="loginForm">
+                    <form action="#" method="post" id="loginArea" enctype="text/plain">
                             <ul>
                                 <li>
                                     <label for="email">E-mail</label>
@@ -52,7 +54,7 @@
                                 </li>
                             </ul>
                         <input type="submit" id="logIn" class="btn" value="Log in">
-                        <input type="submit" id="create" class="btn" value="Create account">
+                        <input type="submit" id="signUp" class="btn" value="Sign up">
                    </form>
                 
                 </section>
@@ -107,11 +109,11 @@
                         </article>
                     </section>
                    </section>
-               <section>
+               <section class="rewards">
                    <h2>Rewards + 10% off</h2>
-                   <form action="#" method="post" id="mainContact" enctype="text/plain">
-                            <label for="email">E-mail</label>
-                            <input type="text" id="email" name="email" required>
+                   <form action="#" method="post" id="rewards" enctype="text/plain">
+                            <label for="rewardsEmail">E-mail</label>
+                            <input type="text" id="rewardsEmail" name="email" required placeholder="enter your e-mail">
                            <input type="submit" id="subscribe" class="btn" value="Subscribe">
                    </form>
                </section>
