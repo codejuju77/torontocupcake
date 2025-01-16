@@ -460,7 +460,7 @@ header.index a {
     font-style: italic;
     color: #999;
 }
-#email {
+#rewardsEmail {
     padding-left: 1rem;
     border: solid 1px var(--secondary-color);
     border-top-left-radius: 8px;
@@ -472,7 +472,7 @@ footer {
     color: var(--neutral-lt-color);
     width: 100%;
     justify-items: center;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     padding: .96rem 0 1.6rem 0;
 }
 .socialContainer {
@@ -481,7 +481,7 @@ footer {
     align-items: center;
 }
 .social {
-    font-size: 2.56rem;
+    font-size: 2.2rem;
 }
 footer a {
     display: flex;
@@ -492,8 +492,8 @@ footer a {
     background-color: rgba(255,255,255,.2);
     border: solid 1px var(--neutral-lt-color);
     border-radius: 50%;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
 }
 
 .locations {
@@ -505,7 +505,7 @@ footer a {
     max-width: 8em;
 }
 footer li {
-    margin: 1.6rem;
+    margin: 1.3rem;
     line-height: 1.6;
 }
 footer p {
@@ -529,7 +529,57 @@ main.shop section.twoxtwo {
 }
 
 /* ************* ACCOUNT *********** */
+.account h2.loginPadding {
+    padding: 5.5rem 2rem 1rem;
+}
+.account h2 {
+    padding: 1rem;
+}
+.account {
+    text-align: center;
+}
+.account section:first-of-type form{
+    text-align: center;
+}
+.account input {
+    margin-bottom: .5rem;
+}
+.loginForm ul {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    font-size: 1.6rem;
+    font-color: var(--secondary-font);
+}
+.account section label {
+    display: block;
+}
+.account .rewards {
+    padding-top: 2rem;
+}
+#loginArea {
+    padding: 1rem 0 2rem;
+}
+#logIn {
+    background-color: var(--secondary-color);
+    color: var(--neutral-lt-color);
+    font-weight: 700;
+    padding: 4px 5px;
+    margin: 0 1rem 0;
+    border-radius: 10px;
+    border-color: transparent;
+    box-shadow: var(--shadow);
 
+}
+#signUp {
+    background-color: var(--neutral-lt-color);
+    color: var(--secondary-color);
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 10px;
+    border: solid 1px var(--secondary-color);
+    box-shadow: var(--shadow);
+    
+}
 /*shop page end*/
 /*about us page start*/
 
