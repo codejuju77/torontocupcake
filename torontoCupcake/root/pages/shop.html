@@ -188,17 +188,29 @@
                                 <img src="../images/customlg.jpg" alt="custom cupcake"
                                 class="img2">
                            </a>
-                            <p><a href="#">See Gallery <i class="fa-solid fa-chevron-right"></i></a></p>
-                            <p><a href="contact.html">Contact Us <i class="fa-solid fa-chevron-right"></i></a></p>
+                            <p id="galleryLink"><a href="#">See Gallery <i class="fa-solid fa-chevron-right"></i></a></p>
+                            <p id="contactLink"><a href="contact.html">Contact Us <i class="fa-solid fa-chevron-right"></i></a></p>
                       </article>
                     
                 </section>
                <section class="rewards">
                    <h2>Rewards + 10% off</h2>
-                   <form action="#" method="post" id="rewards" enctype="text/plain">
-                            <label for="email">E-mail</label>
-                            <input type="text" id="email" name="email" required placeholder="enter your e-mail">
-                           <input type="submit" id="subscribe" class="btn" value="Subscribe">
+                   <form action="#" method="post" enctype="text/plain">
+                           <fieldset id="rewards">
+                            <label id="hide" for="rewardsEmail">E-mail</label>
+                            <input type="text" id="rewardsEmail" name="email" required placeholder="enter your e-mail">
+                            <input type="submit" id="subscribe" class="btn" value="Subscribe">
+                            </fieldset>
+                            <ul class="checkbox">
+                                <li>
+                                    <input type="checkbox" name="amenities" id="newsletter">
+                                    <label for="newsletter">Add me to newsletter</label>
+                                </li>
+                                <li>
+                                   <input type="checkbox" name="amenities" id="account" checked="checked">
+                                   <label for="account">Rewards only</label>
+                               </li>
+                             </ul>
                    </form>
                </section>
             </main>

@@ -827,6 +827,7 @@ header.policies h2 {
 main.policies {
     max-width: 70%;
     margin: auto;
+     
 }
 main.policies section {
     padding: 20px 0;
@@ -837,6 +838,7 @@ main.policies h3 {
 main.policies p {
     color: #5A4037;
     padding: 10px 0 25px;
+    font-family: var(--primary-font);
 }
 
 /*policies page end*/
@@ -1130,7 +1132,15 @@ main.policies p {
         margin: 0;
         text-align: left;
         border-bottom: none;
+        grid-row-gap: 15px;
+        padding-top: 10px;
        
+    }
+    main.shop article.custom #galleryLink {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    main.shop article.custom #contactLink {
+        grid-area: 2 / 1 / 3 / 2;
     }
    
 }
