@@ -384,7 +384,7 @@ header.index a {
     grid-template-rows: .25fr 1fr 1fr;
     grid-gap: 1rem;
     margin: 0 2rem;
-    padding: 0 3rem 2rem;
+    padding: 0 3rem 5rem;
     border-bottom: 1px solid var(--primary-color);
 }
 .index section:nth-of-type(3) h2 {
@@ -395,7 +395,7 @@ header.index a {
     max-width: 100%;
     height: auto;
 }
-/* ******** REVIEWS & CAROUSEL ****** */
+/* carousel*/
 .index section:nth-of-type(4) h2 {
     padding: 1rem;
 }
@@ -455,7 +455,7 @@ header.index a {
     font-size: 1.5rem;
     cursor: pointer;
 }
-.rewards form label {
+#hide {
     visibility: hidden;
 }
 .rewards form input::placeholder {
@@ -469,6 +469,21 @@ header.index a {
     border: solid 1px var(--secondary-color);
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
+}
+ul.checkbox {
+    display: flex;
+    justify-content: center;
+}
+ul.checkbox li {
+    padding: 1rem 2rem;
+}
+ul.checkbox li label {
+    color: var(--secondary-font);
+    font-size: 1.6rem;
+}
+.checkbox, .radioList input {
+    accent-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 /* ************* FOOTER ************ */
 footer {
@@ -608,10 +623,10 @@ article.custom p {
 
 /* ************* ACCOUNT *********** */
 .account h2.loginPadding {
-    padding: 5.5rem 2rem 1rem;
+    padding: 6rem 2rem 1rem;
 }
 .account h2 {
-    padding: 1rem;
+    padding: 1rem 1rem 2rem;
 }
 .account {
     text-align: center;
@@ -628,6 +643,9 @@ article.custom p {
     font-size: 1.6rem;
     font-color: var(--secondary-font);
 }
+.loginForm ul li:last-of-type {
+    padding-bottom: 2rem;
+}
 .account section label {
     display: block;
 }
@@ -635,28 +653,45 @@ article.custom p {
     padding-top: 2rem;
 }
 #loginArea {
-    padding: 1rem 0 2rem;
+    padding: 1rem 4rem 2rem;
+}
+.account .loginForm form #email, #password {
+    width: 100%;
+    height: 4rem;
+}
+.account .loginForm form label {
+    text-align: left;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    color: #999;
 }
 #logIn {
     background-color: var(--secondary-color);
     color: var(--neutral-lt-color);
     font-weight: 700;
-    padding: 4px 5px;
+    padding: 4px 4rem;
     margin: 0 1rem 0;
     border-radius: 10px;
     border-color: transparent;
     box-shadow: var(--shadow);
 
 }
+
 #signUp {
     background-color: var(--neutral-lt-color);
     color: var(--secondary-color);
     font-weight: 700;
-    padding: 5px;
+    padding: 4px 3.5rem;
     border-radius: 10px;
-    border: solid 1px var(--secondary-color);
+    border: solid 1px var(--neutral-lt-color);
     box-shadow: var(--shadow);
     
+}
+.account section:nth-last-of-type(2) h2{
+    padding-bottom: 3rem;
+}
+.account .carousel article{
+    max-width: 255px;
 }
 /*shop page end*/
 /*about us page start*/
@@ -803,9 +838,12 @@ main.policies p {
 
 /* *********** MEDIA QUERIES ********* */
 @media screen and (min-width: 475px) {
-    main {
+    main, header.account {
         max-width: 475px;
         margin: auto;
+    }
+    h2 {
+        font-size: 2.75rem;
     }
     header.index {
         height: 500px;
@@ -823,6 +861,7 @@ main.policies p {
         font-size: 3.5rem;
         padding-bottom: 1rem;
     }
+
     /* ********** NAV ************** */
     nav {
         padding: .5rem 2rem;
@@ -866,11 +905,15 @@ main.policies p {
         justify-content: space-between;
         width: 500px;
         margin: auto;
+        font-size: 1.6rem;
     }
     .socialContainer {
     }
     
     /* ******** INDEX ********* */
+    .index section {
+        padding: 4rem 0;
+    }
     .index h3 {
         font-size: 2rem;
     }
@@ -937,7 +980,6 @@ main.policies p {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-row-gap: 1rem;
         margin: 1.5rem 2rem;
-        padding-bottom: 1rem;
     }
     .index section:nth-of-type(2) h2 {
         grid-row: 1/2;
@@ -980,12 +1022,8 @@ main.policies p {
     .index section:nth-of-type(4) {
         max-width: 475px;
         margin: auto;
-        padding-bottom: 2rem;
     }
     /*rewards*/
-    .index section:last-of-type {
-        padding-bottom: 2rem;
-    }
     .index section:last-of-type h2{
         padding-bottom: 1.5rem;
     }
@@ -998,6 +1036,14 @@ main.policies p {
     #rewardsEmail {
         padding-right: 2rem;
     }
+    /*********** Account **************/
+    .account h2.loginPadding {
+        padding: 7.5rem 0 2rem;
+        grid-row-gap: 1rem;
+    }
+
+
+
     
     
     
