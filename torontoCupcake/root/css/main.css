@@ -843,7 +843,7 @@ main.policies p {
 
 /* *********** MEDIA QUERIES ********* */
 @media screen and (min-width: 475px) {
-    main, header.account {
+    main, header.account, header.aboutUs .sect2 {
         max-width: 475px;
         margin: auto;
     }
