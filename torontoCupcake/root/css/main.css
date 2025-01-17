@@ -659,7 +659,13 @@ article.custom p {
     box-shadow: var(--shadow);
     
 }
-
+.account section:nth-last-of-type(2) h2{
+    padding-bottom: 3rem;
+}
+.account .carousel article{
+    max-width: 255px;
+}
+/*shop page end*/
 /*about us page start*/
 
 header.aboutUs {
