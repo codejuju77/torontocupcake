@@ -818,6 +818,10 @@ main.policies p {
         max-width: 475px;
         margin: auto;
     }
+    header.aboutUs .sect2 {
+        max-width: 475px;
+        margin: auto;
+    }
     header.index {
         height: 500px;
         background-image: url(../images/herolg.jpg);
