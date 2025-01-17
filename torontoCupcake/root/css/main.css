@@ -822,6 +822,9 @@ main.policies p {
         max-width: 475px;
         margin: auto;
     }
+    h2 {
+        font-size: 2.75rem;
+    }
     header.index {
         height: 500px;
         background-image: url(../images/herolg.jpg);
