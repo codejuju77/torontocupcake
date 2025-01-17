@@ -37,11 +37,9 @@
                </ul>
                <a href="../index.html" id="logo"><h1>Toronto Cupcakes</h1><img src="../images/ltcupcake.png" alt="cupcake logo"></a>   
             </nav>
-            <header class="account">
-                <h2 class="loginPadding">Log In</h2>
-            </header>
             <main class="account">
                <section class="loginForm">
+                   <h2 class="loginPadding">Log In</h2>
                     <form action="#" method="post" id="loginArea" enctype="text/plain">
                             <ul>
                                 <li>
@@ -60,7 +58,6 @@
                 </section>
                <section>
                    <h2>Reviews</h2>
-                   
                    <section class="carousel">
                         <article>
                             <i class="fa-solid fa-star"></i>
@@ -68,7 +65,7 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
-                            <p>Toronto Cupcakes graciously worked with me on a last minute order. The cupcakes were beautiful and I appreciate their amazing customer service</p>
+                            <p>Toronto Cupcakes graciously worked with me on a last minute order. I appreciate their amazing customer service</p>
                             <p>-Sammy G</p>
                         </article>
                         <article>
@@ -111,10 +108,21 @@
                    </section>
                <section class="rewards">
                    <h2>Rewards + 10% off</h2>
-                   <form action="#" method="post" id="rewards" enctype="text/plain">
-                            <label for="rewardsEmail">E-mail</label>
+                   <form action="#" method="post" enctype="text/plain">
+                           <fieldset id="rewards">
+                            <label id="hide" for="rewardsEmail">E-mail</label>
                             <input type="text" id="rewardsEmail" name="email" required placeholder="enter your e-mail">
-                           <input type="submit" id="subscribe" class="btn" value="Subscribe">
+                            <input type="submit" id="subscribe" class="btn" value="Subscribe">
+                            </fieldset>
+                            <ul class="checkbox">
+                                <li>
+                                    <input type="checkbox" name="amenities" id="newsletter">
+                                    <label for="newsletter">Add me to newsletter</label>
+                                </li>
+                                <li>
+                                   <input type="checkbox" name="amenities" id="account" checked="checked">
+                                   <label for="account">Rewards only</label>
+                               </li>
                    </form>
                </section>
             </main>
