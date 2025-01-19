@@ -573,15 +573,14 @@ main.shop section.twoxtwo {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 18px;
-    border-bottom: solid #EB9AB0 1px;
+    border-bottom: solid var(--primary-color) 1px;
     padding: 20px 0;
     margin-bottom: 10px;
 }
 main.shop figure img {
     max-width: 100%;
     height: auto;
-/*    margin: auto;*/
-    border: solid #EB9AB0 3px;
+    border: solid var(--primary-color) 3px;
 }
 main.shop figcaption {
     text-align: center;
@@ -600,10 +599,7 @@ main.shop figure a:visited {
 }
 main.shop figure p {
     text-align: center;
-    font-family: var(--headline-font);
-    color: gray;
-    font-weight: 700;
-    font-size: 1.2em;
+
 }
 main.shop h2 {
     text-align: center;
@@ -614,12 +610,12 @@ article.custom {
     text-align: center;
     max-width: 100%;
     margin: auto;
-    border-bottom: solid #EB9AB0 1px;
+    border-bottom: solid var(--primary-color) 1px;
     padding-bottom: 10px;
     
 }
 article.custom img {
-    border: solid #EB9AB0 3px;
+    border: solid var(--primary-color) 3px;
     max-width: 100%;
     height: auto;
     margin: auto;
@@ -637,85 +633,14 @@ article.custom p {
      font-size: 1.2em;
 }
 
-/* ************* ACCOUNT *********** */
-.account h2.loginPadding {
-    padding: 6rem 2rem 1rem;
-}
-.account h2 {
-    padding: 1rem 1rem 2rem;
-}
-.account {
-    text-align: center;
-}
-.account section:first-of-type form{
-    text-align: center;
-}
-.account input {
-    margin-bottom: .5rem;
-}
-.loginForm ul {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    font-size: 1.6rem;
-    font-color: var(--secondary-font);
-}
-.loginForm ul li:last-of-type {
-    padding-bottom: 2rem;
-}
-.account section label {
-    display: block;
-}
-.account .rewards {
-    padding-top: 2rem;
-}
-#loginArea {
-    padding: 1rem 4rem 2rem;
-}
-.account .loginForm form #email, #password {
-    width: 100%;
-    height: 4rem;
-}
-.account .loginForm form label {
-    text-align: left;
-    text-transform: uppercase;
-    padding-bottom: 1rem;
-    color: #999;
-}
-#logIn {
-    background-color: var(--secondary-color);
-    color: var(--neutral-lt-color);
-    font-weight: 700;
-    padding: 4px 4rem;
-    margin: 0 1rem 0;
-    border-radius: 10px;
-    border-color: transparent;
-    box-shadow: var(--shadow);
 
-}
 
-#signUp {
-    background-color: var(--neutral-lt-color);
-    color: var(--secondary-color);
-    font-weight: 700;
-    padding: 4px 3.5rem;
-    border-radius: 10px;
-    border: solid 1px var(--neutral-lt-color);
-    box-shadow: var(--shadow);
-    
-}
-.account section:nth-last-of-type(2) h2{
-    padding-bottom: 3rem;
-}
-.account .carousel article{
-    max-width: 255px;
-}
-/*shop page end*/
 /*about us page start*/
 
 header.aboutUs {
-    background-color: #CFFBFA;
+    background-color: var(--accent-color);
     padding: 30px 0;
-    color: #5A4037;
+    color: var(--secondary-color);
 }
 header.aboutUs .miniNav a:hover {
     color: var(--neutral-lt-color);
@@ -732,7 +657,7 @@ header.aboutUs img {
     max-width: 70%;
     height: auto;
     margin: auto;
-    border: solid #EB9AB0 3px;
+    border: solid var(--primary-color) 3px;
 }
 header.aboutUs section.sect2 p {
     max-width: 70%;
@@ -748,11 +673,11 @@ main.aboutUs  {
     text-align: center;
     grid-row-gap: 25px;
     padding: 25px 0;
-    color: #5A4037;
+    color: var(--secondary-color);
 }
   
 main.aboutUs article {
-    border-bottom: solid #EB9AB0 1px;
+    border-bottom: solid var(--primary-color) 1px;
     margin: 0 25px;
     padding: 25px 0;
 }
@@ -761,7 +686,7 @@ main.aboutUs img {
     max-width: 70%;
     height: auto;
     margin: auto;
-    border: solid #EB9AB0 3px;
+    border: solid var(--primary-color) 3px;
 }
 main.aboutUs p {
     max-width: 75%;
@@ -833,8 +758,6 @@ main.contact input#submit {
     color: var(--secondary-color);
     font-weight: 700;
     padding: 5px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
     border-radius: 10px;
     border-color: transparent;
     cursor: pointer;
@@ -851,7 +774,6 @@ header.policies h2 {
 main.policies {
     max-width: 70%;
     margin: auto;
-     
 }
 main.policies section {
     padding: 20px 0;
@@ -860,12 +782,90 @@ main.policies h3 {
     padding-bottom: 15px;
 }
 main.policies p {
-    color: #5A4037;
+    color: var(--secondary-color);
     padding: 10px 0 25px;
     font-family: var(--primary-font);
 }
 
 /*policies page end*/
+
+
+
+
+/* ************* ACCOUNT *********** */
+.account h2.loginPadding {
+    padding: 6rem 2rem 1rem;
+}
+.account h2 {
+    padding: 1rem 1rem 2rem;
+}
+.account {
+    text-align: center;
+}
+.account section:first-of-type form{
+    text-align: center;
+}
+.account input {
+    margin-bottom: .5rem;
+}
+.loginForm ul {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    font-size: 1.6rem;
+    color: var(--secondary-font);
+}
+.loginForm ul li:last-of-type {
+    padding-bottom: 2rem;
+}
+.account section label {
+    display: block;
+}
+.account .rewards {
+    padding-top: 2rem;
+}
+#loginArea {
+    padding: 1rem 4rem 2rem;
+}
+.account .loginForm form #email, #password {
+    width: 100%;
+    height: 4rem;
+}
+.account .loginForm form label {
+    text-align: left;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    color: #999;
+}
+#logIn {
+    background-color: var(--secondary-color);
+    color: var(--neutral-lt-color);
+    font-weight: 700;
+    padding: 4px 4rem;
+    margin: 0 1rem 0;
+    border-radius: 10px;
+    border-color: transparent;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+
+}
+
+#signUp {
+    background-color: var(--neutral-lt-color);
+    color: var(--secondary-color);
+    font-weight: 700;
+    padding: 4px 3.5rem;
+    border-radius: 10px;
+    border: solid 1px var(--neutral-lt-color);
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    
+}
+.account section:nth-last-of-type(2) h2{
+    padding-bottom: 3rem;
+}
+.account .carousel article{
+    max-width: 255px;
+}
 
 /* *********** MEDIA QUERIES ********* */
 @media screen and (min-width: 475px) {
