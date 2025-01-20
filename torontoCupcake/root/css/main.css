@@ -79,6 +79,8 @@ p {
        2. Nav & Headers
 
 ************************************************/
+
+/*element selector*/
 nav {
     position: absolute;
     width: 100%;
@@ -87,7 +89,8 @@ nav {
     justify-content: space-between;
     box-shadow: var(--shadow)
 ;}
-nav ul.menu {
+/*class selector */
+nav ul.menu { 
     font-size: 1.6rem;
     display: none;
 }
@@ -96,6 +99,7 @@ nav li {
     text-align: center;
     border-bottom: solid 1px #fff;
 }
+/*descendant selector*/
 nav li:first-child {
     border-top: solid 1px #fff;
 }
@@ -106,6 +110,8 @@ nav a {
     text-decoration: none;
     cursor: pointer;
 }
+
+/*pseudo-class selector*/
 nav ul li a:hover {
     background-color: var(--neutral-lt-color);
     color: var(--primary-color);
@@ -129,12 +135,15 @@ nav ul li a:active {
 .fa-solid fa-chevron-down {
     font-size: 1.6rem;
 }
+
+
 nav input[type=checkbox]:checked ~ ul.menu {
     display: block;
 }
 nav input[type=checkbox] {
     display: none;
 }
+/*ID selector*/
 nav #logo {
     position: absolute;
     right: .6rem;
@@ -327,6 +336,7 @@ header.policies h2 {
 .index h3 {
     font-size: 1.2rem;
 }
+/*sibling selectors*/
 .index section:nth-of-type(2) {
     display: grid;
     grid-template-rows: .25fr .2fr 1fr 1fr;
@@ -556,15 +566,7 @@ main.contact h3 {
 main.contact p {
     color: var(--secondary-color);
 }
-main.contact input#submit {
-    background-color: var(--accent-color);
-    color: var(--secondary-color);
-    font-weight: 700;
-    padding: 5px;
-    border-radius: 10px;
-    border-color: transparent;
-    cursor: pointer;
-}
+
 
 /* ********* POLICIES MAIN ************* */
 
@@ -720,6 +722,7 @@ ul.checkbox li label {
     box-shadow: var(--shadow);
     cursor: pointer;
 }
+/* *********** CONTACT FORM ************ */
 main.contact form {
     font-size: 1.6em;
     color: var(--secondary-color);
@@ -733,12 +736,19 @@ main.contact fieldset {
 }
 .yourInfo li, .locationForm li, .radioList {
     padding-bottom: 5px;
-    
 }
 main.contact legend {
     font-weight: 700;
 }
-
+main.contact input#submit {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: transparent;
+    cursor: pointer;
+}
 /************************************************
 
        4. FOOTER
