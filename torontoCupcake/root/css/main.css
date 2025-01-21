@@ -398,6 +398,7 @@ header.policies h2 {
     height: auto;
 }
 /* carousel*/
+/*JQUERY USED TO CREATE THE REVIEW CAROUSEL ON MULTIPLE PAGES*/
 .index section:nth-of-type(4) h2 {
     padding: 1rem;
 }
