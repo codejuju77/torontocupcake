@@ -838,6 +838,9 @@ footer p {
     main.contact {
         max-width: 400px;
     }
+    header.contact {
+        height: 350px;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -1030,7 +1033,6 @@ footer p {
     }
     
 /*    about us*/
-    
     header.aboutUs section.sect2, main.aboutUs {
         padding-top: 15px;
         display: grid;
@@ -1069,7 +1071,6 @@ footer p {
         padding-top: 25px;
         margin-top: 0;
     }
-    
     /*shop page*/
     main.shop {
         max-width: 90%
@@ -1097,7 +1098,6 @@ footer p {
         border-bottom: none;
         grid-row-gap: 15px;
         padding-top: 10px;
-       
     }
     main.shop article.custom #galleryLink {
         grid-area: 1 / 1 / 2 / 2;
@@ -1107,6 +1107,9 @@ footer p {
     }
     
     header.contact {
-        height: 300px;
+        height: 450px;
+    }
+    header.contact h2 {
+        font-size: 3.5rem;
     }
 }
