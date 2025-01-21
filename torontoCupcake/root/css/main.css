@@ -1113,4 +1113,7 @@ footer p {
     header.contact h2 {
         font-size: 3.5rem;
     }
+    main.policies {
+        max-width: 500px;
+    }
 }
