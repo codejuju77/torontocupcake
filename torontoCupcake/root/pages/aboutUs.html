@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.typekit.net/puj2pqh.css">
-		<link href="../css/main.css" rel="stylesheet" type="text/css">
+		<link href="../css/mainMini.css" rel="stylesheet" type="text/css">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
@@ -51,21 +51,33 @@
     <main class="aboutUs">
        <article>
             <img src="../images/aboutUsMain1.jpg" alt="display of rows of colorful cupcakes">
-            <p>Welcome to Toronto Cupcake! Founded in 2010, we are proud to be Toronto's leading destination for gourmet branded cupcakes. Whether you're celebrating a birthday, hosting a corporate event, or simply indulging in a sweet treat, our handcrafted cupcakes are made fresh daily using the finest ingredients. Explore our wide range of classic and seasonal flavors, and enjoy fast, reliable delivery across the GTA.</p>
-            <p>We love the idea that our treats are making people happy every time they bite into one. How much fun is that!</p>
+            <section>
+                <p>Welcome to Toronto Cupcake! Founded in 2010, we are proud to be Toronto's leading destination for gourmet branded cupcakes. Whether you're celebrating a birthday, hosting a corporate event, or simply indulging in a sweet treat, our handcrafted cupcakes are made fresh daily using the finest ingredients. Explore our wide range of classic and seasonal flavors, and enjoy fast, reliable delivery across the GTA.</p>
+                <p>We love the idea that our treats are making people happy every time they bite into one. How much fun is that!</p>
+            </section>
         </article>
         <article>
             <img src="../images/aboutUsMain2.jpeg" alt="A spread of desserts on a table">
-            <p>At Toronto Cupcake, we believe in giving back to the community. Since our inception, we have partnered with numerous local organizations, donating our time and/or delicious cupcakes to support causes that make a difference in local and regional communities. We are committed to making a positive impact in our community and welcome opportunities to collaborate on charitable events.</p>
+            <p class="aboutUs">At Toronto Cupcake, we believe in giving back to the community. Since our inception, we have partnered with numerous local organizations, donating our time and/or delicious cupcakes to support causes that make a difference in local and regional communities. We are committed to making a positive impact in our community and welcome opportunities to collaborate on charitable events.</p>
         </article>
-         <section>
+         <section class="rewards">
                    <h2>Rewards + 10% off</h2>
-                   <form action="#" method="post" id="mainContact" enctype="text/plain">
-                       <fieldset>
-                            <label for="email">E-mail</label>
-                            <input type="text" id="email" name="email" required>
-                       </fieldset>
-                           <input type="submit" id="subscribe" class="btn" value="Subscribe">
+                   <form action="#" method="post" enctype="text/plain">
+                           <fieldset id="rewards">
+                            <label id="hide" for="rewardsEmail">E-mail</label>
+                            <input type="text" id="rewardsEmail" name="email" required placeholder="enter your e-mail">
+                            <input type="submit" id="subscribe" class="btn" value="Subscribe">
+                            </fieldset>
+                            <ul class="checkbox">
+                                <li>
+                                    <input type="checkbox" name="amenities" id="newsletter">
+                                    <label for="newsletter">Add me to newsletter</label>
+                                </li>
+                                <li>
+                                   <input type="checkbox" name="amenities" id="account" checked="checked">
+                                   <label for="account">Rewards only</label>
+                               </li>
+                             </ul>
                    </form>
                </section>
 
