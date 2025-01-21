@@ -748,6 +748,7 @@ main.contact input#submit {
     padding: 5px;
     border-radius: 10px;
     border-color: transparent;
+    box-shadow: var(--shadow);
     cursor: pointer;
 }
 /************************************************
