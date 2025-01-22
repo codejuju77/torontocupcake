@@ -580,6 +580,15 @@ main.contact #email:visited {
 main.contact #email:hover {
     color: var(--accent-color);
 }
+main.contact .number:link {
+     color: var(--primary-color);
+}
+main.contact .number:visited {
+     color: palevioletred;
+}
+main.contact .number:hover {
+     color: var(--accent-color);
+}
 /* ********* POLICIES MAIN ************* */
 
 main.policies {
