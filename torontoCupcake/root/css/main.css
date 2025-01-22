@@ -761,6 +761,14 @@ main.contact fieldset {
 main.contact legend {
     font-weight: 700;
 }
+main.contact fieldset.radioList {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+main.contact fieldset.radioList legend {
+    font-weight: 500;
+}
 main.contact input#submit {
     background-color: var(--accent-color);
     color: var(--secondary-color);
