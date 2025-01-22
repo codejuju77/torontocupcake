@@ -571,13 +571,13 @@ main.contact p {
 main.contact .padding {
     padding-bottom: 10px;
 }
-main.contact #email:link {
+main.contact #emailtwo:link {
     color: var(--primary-color);
 }
-main.contact #email:visited {
+main.contact #emailtwo:visited {
     color: palevioletred;
 }
-main.contact #email:hover {
+main.contact #emailtwo:hover {
     color: var(--accent-color);
 }
 main.contact .number:link {
