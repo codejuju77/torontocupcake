@@ -164,8 +164,8 @@ nav img {
 .miniNav {
     color: black;
     font-size: 8px;
-    margin-left: 10px;
-    padding-top: 10px;
+    margin-left: 20px;
+    padding-top: 20px;
 }
 .miniNav a:link {
     color: var(--primary-color);
@@ -566,9 +566,20 @@ main.contact h3 {
 }
 main.contact p {
     color: var(--secondary-color);
+    font-family: var(--primary-font);
 }
-
-
+main.contact .padding {
+    padding-bottom: 10px;
+}
+main.contact #email:link {
+    color: var(--primary-color);
+}
+main.contact #email:visited {
+    color: palevioletred;
+}
+main.contact #email:hover {
+    color: var(--accent-color);
+}
 /* ********* POLICIES MAIN ************* */
 
 main.policies {
@@ -1030,7 +1041,7 @@ footer p {
         grid-row-gap: 1rem;
     }
     .miniNav {
-        padding-top: 30px;
+        padding-top: 40px;
     }
     
 /*    about us*/
